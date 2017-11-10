@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+　<script src="lib/onsenui/js/onsenui.js"></script>
+　<script>
+　document.addEventListener('init', function(event) {
+    ons.disableAutoStyling();
+　});
+　</script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">
+  <link rel="stylesheet" href="css/radio-button.css">
+
+</head>
+
+<body link="#1284ff" vlink="#1284ff" alink="#1284ff">
+  <ons-page>
+    <ons-toolbar>
+        <div class="center">新規登録</div>
+        
+    </ons-toolbar>
+    <div class="login-form">
+        ユーザー情報を登録してください<br><br>
+                <input type="text" class="text-input--underbar" placeholder="名前を入力してください" value="">
+                <input type="text" class="text-input--underbar" placeholder="メールアドレスを入力してください" value=""><br><br>
+
+<label class="radio-button radio-button--material">
+  <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+  <div class="radio-button__checkmark radio-button--material__checkmark"></div>男性
+</label>
+<label class="radio-button radio-button--material">
+  <input type="radio" class="radio-button__input radio-button--material__input" name="r">
+  <div class="radio-button__checkmark radio-button--material__checkmark"></div>女性
+</label>
+
+
+<br><br>
+    <input type="password" class="text-input--underbar" placeholder="パスワードを入力してください" value="">
+    <input type="password" class="text-input--underbar" placeholder="パスワードを再入力してください" value="">
+    <br><br>            
+    <ons-button modifier="large" class="login-button">情報を送信</ons-button><br><br>
+    
+                <ons-button modifier="quiet" class="forgot-password"><a href="login.html">戻る</ons-button>
+                </div>
+        
+        </ons-page>
+</body>
+</html>
